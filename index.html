@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <title>Mi Dinero</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- IBM Plex Mono desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet" />
+
+    <!-- Estilos css -->
+    <link href="/style/index.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="/style/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body class="text-black px-10 py-4 relative">
+    <navbar id="navbar" class="flex flex-col md:flex-row items-center justify-between gap-4">
+        <div class="flex items-center">
+            <img class="w-6 h-6 mr-2 rounded" src="assets/favicon.ico" alt="Logo de app">
+            <a href="#" class="text-xl font-bold">Mi dinero</a>
+        </div>
+        
+        <div class="flex flex-col md:flex-row items-center gap-4 w-full md:w-auto">
+            <a href="#Acerca" class="w-full md:w-auto text-center bg-indigo-400 border-2 rounded border-indigo-700 text-white font-bold px-3 py-1 hover:scale-105 transition duration-300 cursor-pointer">
+                Acerca de la aplicación 💜
+            </a>
+            <a href="#descarga" class="w-full md:w-auto text-center bg-indigo-400 border-2 rounded border-indigo-700 text-white font-bold px-3 py-1 hover:scale-105 transition duration-300 cursor-pointer">
+                <i class="fa fa-download" aria-hidden="true"></i> Descarga
+            </a>
+        </div>
+    </navbar>
+    
+    <!-- Formas orgánicas decorativas -->
+    <div class="fixed -z-10 top-0 right-0 w-96 h-96 bg-indigo-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+    <div class="fixed -z-10 top-96 -left-4 w-96 h-96 bg-indigo-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+    <div class="fixed -z-10 bottom-0 right-1/4 w-96 h-96 bg-indigo-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+    <div class="fixed -z-10 top-1/2 left-1/3 w-96 h-96 bg-indigo-50 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-6000"></div>
+
+    <section class="flex flex-col md:flex-row items-center justify-between py-8 md:py-16 gap-8">
+        <!-- Lado izquierdo -->
+        <div class="flex-1 text-center md:text-left">
+            <h1 class="font-bold text-4xl md:text-5xl leading-tight">
+                Gestionar tus finanzas nunca fue tan fácil<span class="inline-block">💫</span>
+            </h1>
+            <!-- Opcional: agregar un subtítulo o CTA -->
+            <p class="mt-4 text-lg text-gray-600">Toma el control de tus finanzas personales de manera simple y efectiva</p>
+        </div>
+        
+        <!-- Lado derecho -->
+        <div class="flex-1 flex justify-center items-center">
+            <div class="w-96 h-96 md:w-[500px] md:h-[500px] relative">
+                <img 
+                    src="assets/Inicio - midinero-portrait.png" 
+                    alt="Inicio de la aplicación mi dinero"
+                    class="w-full h-full object-contain hover:scale-110 transition-transform duration-300 hover:rotate-12"
+                >
+            </div>
+        </div>
+    </section>
+
+    <section id="Acerca" class="max-w-5xl mx-auto py-16 space-y-24 ">
+        <div class="flex flex-col md:flex-row items-center gap-8">
+            <div class="flex-1 space-y-4">
+                <h3 class="text-2xl font-bold text-indigo-600">
+                    <i class="fa fa-calculator mr-2"></i>
+                    Aplicación pensada para la gestión de finanzas personales
+                </h3>
+                <p class="text-gray-600 text-lg">Mantén un registro detallado de tus ingresos y gastos de manera sencilla y eficiente.</p>
+            </div>
+            <div class="flex-1">
+                <img class="w-full rounded-lg hover:scale-105 transition-all duration-500" 
+                    src="assets/presupuesto.png" 
+                    alt="Modulo de presupuesto">
+            </div>
+        </div>
+            
+        <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+            <div class="flex-1 space-y-4">
+                <h3 class="text-2xl font-bold text-indigo-600">
+                    <i class="fa fa-check-circle mr-2"></i>
+                    De manera sencilla, sin complicarse
+                </h3>
+                <p class="text-gray-600 text-lg">Una interfaz limpia y fácil de usar, diseñada pensando en tu comodidad.</p>
+            </div>
+            <div class="flex-1">
+                <img class="w-full rounded-lg hover:scale-105 transition-all duration-500" 
+                    src="assets/savings.png" 
+                    alt="Modulo cuenta de ahorro">
+            </div>
+        </div>
+
+        <!-- Tercera sección: Texto izquierda, imagen derecha -->
+        <div class="flex flex-col md:flex-row items-center gap-8">
+            <div class="flex-1 space-y-4">
+                <h3 class="text-2xl font-bold text-indigo-600">
+                    <i class="fa fa-line-chart mr-2"></i>
+                    Mide tus gastos fácilmente
+                </h3>
+                <p class="text-gray-600 text-lg">Visualiza tus finanzas con gráficos claros y comprensibles.</p>
+            </div>
+            <div class="flex-1">
+                <img class="w-full rounded-lg hover:scale-105 transition-all duration-500" 
+                    src="assets/graficos.png" 
+                    alt="Módulo de gráficos">
+            </div>
+        </div>
+    </section>
+
+    <section id="descarga" class="text-center py-16">
+        <h3 class="text-3xl font-bold text-indigo-600 mb-4">Conoce más acerca de nuestra aplicación 👀</h3>
+        <div class="inline-flex items-center gap-2 bg-black text-white px-6 py-3 rounded-xl hover:scale-105 transition-transform duration-300 cursor-pointer">
+            <i class="fa fa-apple text-2xl"></i>
+            <div class="text-left">
+                <p class="text-xs">Próximamente en</p>
+                <p class="text-xl font-semibold">App Store</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
